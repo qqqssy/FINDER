@@ -1,0 +1,6 @@
+torch>=2.1,<2.7
+numpy>=1.24,<3
+rasterio>=1.3,<2
+nystrom-attention>=0.0.12,<0.1
+PyYAML>=6,<7
+

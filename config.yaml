@@ -1,0 +1,35 @@
+paths:
+  sample_dir: data/tif_processed
+  mask_dir: data/masks
+  date_csv: data/dates.csv
+  prithvi_weights: weights/Prithvi_EO_V1_100M.pt
+  checkpoint: outputs/best_checkpoint.pt
+  annual_output_dir: outputs/annual_predictions
+  igte_output_dir: outputs/igte
+
+split:
+  train: 0.60
+  validation: 0.20
+  test: 0.20
+  seed: 42
+
+model:
+  bands: 6
+  prithvi_embed_dim: 768
+  prithvi_depth: 12
+  prithvi_heads: 12
+  temporal_hidden_dim: 128
+
+training:
+  epochs: 100
+  batch_size: 4
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  num_workers: 0
+
+inference:
+  annual_entropy_threshold: 0.1
+  ig_steps: 50
+  ig_baseline_window: 46
+  ig_threshold: 0.7
+
