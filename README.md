@@ -18,9 +18,6 @@ FINDER/
 └── requirements.txt
 ```
 
-The repository intentionally does not distribute satellite imagery, processed
-TIFF files, annotations, trained checkpoints, or Prithvi weights.
-
 ## Data preparation
 
 The study uses NASA HLS Landsat Operational Land Imager Surface Reflectance and
